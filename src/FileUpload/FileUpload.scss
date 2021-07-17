@@ -1,0 +1,72 @@
+.file-card {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px dashed #cbd5e0;
+    background-color: #edf2f7;
+    min-width: 350px;
+    min-height: 250px;
+
+    .fileinputs {
+        position: relative;
+        max-width: 150px;
+        margin-bottom: 2em;
+        
+        input {
+            position: relative;
+            text-align: right;
+            opacity: 0;
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        button {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: #fff;
+            background-color: #f55e30;
+            cursor: pointer;
+            border-radius: 4px;
+            border: none;
+            outline: none;
+            padding: 1em;
+            transition: background-color 0.4s;
+
+            .icon {
+                width: 1.5em;
+                height: 1.5em;
+                padding: 0.4em;
+                background-color: #fff;
+                color: #f55e30;
+                border-radius: 50%;     
+                display: flex;
+                justify-content: center;
+                align-items: center;           
+            }
+        }
+
+        &:hover {
+            button {
+                background-color: #f15120;
+            }
+        }
+    }
+}
+
+.main {
+    font-weight: bold;
+    margin-bottom: 0.4em;
+}
+
+.info {
+    font-size: 0.8rem;
+}

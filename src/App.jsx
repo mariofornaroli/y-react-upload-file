@@ -1,12 +1,12 @@
 import { useState } from 'react'
-import './App.css';
+import './App.scss';
 import FileUpload from './FileUpload/FileUpload';
 import FileList from './FileList/FileList';
 
 
 function App() {
   const [files, setFiles] = useState([{
-    name: 'xx'
+    name: 'fileName.pdf'
   }])
   return (
     <div className="App">
