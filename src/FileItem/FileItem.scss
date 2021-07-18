@@ -23,5 +23,9 @@ li {
     .actions {
         justify-self: flex-end;
         cursor: pointer;
+
+        .fa-spinner {
+            font-size: 1.2em;
+        }
     }
 }

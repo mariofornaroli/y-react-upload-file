@@ -10,8 +10,8 @@ body {
   color: #343a4a;
   display: flex;
   justify-content: center;
-  align-items: center;
   min-height: 100vh;
+  padding: 80px;
 }
 
 code {
