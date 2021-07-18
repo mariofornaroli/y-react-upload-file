@@ -6,6 +6,10 @@ import FileList from './FileList/FileList';
 function App() {
   const [files, setFiles] = useState([{
     name: 'fileName.pdf'
+  }, {
+    name: 'fileName.pdf'
+  }, {
+    name: 'fileName.pdf'
   }])
   return (
     <div className="App">

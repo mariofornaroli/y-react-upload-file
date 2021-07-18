@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileAlt, faTrash } from '@fortawesome/free-solid-svg-icons'
+import './FileItem.scss'
 
 const FileItem = ({ file, deleteFile }) => {
     return (
@@ -9,14 +10,15 @@ const FileItem = ({ file, deleteFile }) => {
                 className="file-item"
                 key={file.name}>
                 <FontAwesomeIcon icon={faFileAlt} />
-                <div className="file-info">
-                    <p>{file.name}</p>
+                <p>{file.name} - Uploaded</p>
+                {/* <div className="file-info">
+                    <p>{file.name} - Uploaded</p>
                     <div className="progress"></div>
-                </div>
+                </div> */}
                 <div className="actions">
                     <div className="loading"></div>
                     <FontAwesomeIcon icon={faTrash}
-                    onClick={()=> deleteFile(file.name)} />
+                        onClick={() => deleteFile(file.name)} />
                 </div>
             </li>
         </>

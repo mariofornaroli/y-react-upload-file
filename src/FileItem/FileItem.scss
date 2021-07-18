@@ -1,0 +1,28 @@
+li {
+    list-style: none;
+    margin: 1.2em 0;
+    background-color: #f55e3038;
+    border-radius: 5px;
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    padding: 1.2em 1.5em;
+    font-size: 1rem;
+
+    svg {
+        color: #f55321;
+        &:first-child {
+            font-size: 1.2em;
+            margin-right: 0.8em;
+        }
+    }
+
+    p {
+        flex: 1;
+    }
+
+    .actions {
+        justify-self: flex-end;
+        cursor: pointer;
+    }
+}
