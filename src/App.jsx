@@ -11,11 +11,17 @@ function App() {
   }, {
     name: 'fileName 3.pdf'
   }])
+
+  const removeFile = (filename) => {
+    setFiles(files.filter(file => file.name !== filename))
+  }
+
   return (
     <div className="App">
       <div className="title">Upload file</div>
-      <FileUpload files={files} setFiles={setFiles} />
-      <FileList files={files} setFiles={setFiles} />
+      <FileUpload files={files} setFiles={setFiles}
+        removeFile={removeFile} />
+      <FileList files={files} removeFile={removeFile} />
     </div>
   );
 }

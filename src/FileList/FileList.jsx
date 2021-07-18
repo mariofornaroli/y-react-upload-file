@@ -2,16 +2,11 @@ import axios from 'axios'
 import React from 'react'
 import FileItem from './../FileItem/FileItem'
 
-const FileList = ({ files, setFiles }) => {
+const FileList = ({ files, removeFile }) => {
     const deleteFileHandler = (_name) => {
-
-        // axios.delete('http://localhost:8080/upload', {
-        //     headers: {},
-        //     data: { name: _name }
-        // })
         axios.delete(`http://localhost:8080/upload?name=${_name}`)
-            .then((res) => setFiles(files.filter(f => f.name !== _name)))
-            .then((err) => console.error(err));
+            .then((res) => removeFile(_name))
+            .catch((err) => console.error(err));
     }
     return (
         <ul className="file-list">
