@@ -10,7 +10,7 @@ const FileItem = ({ file, deleteFile }) => {
                 className="file-item"
                 key={file.name}>
                 <FontAwesomeIcon icon={faFileAlt} />
-                <p>{file.name} - Uploaded</p>
+                <p>{file.name}</p>
                 {/* <div className="file-info">
                     <p>{file.name} - Uploaded</p>
                     <div className="progress"></div>

@@ -7,9 +7,9 @@ function App() {
   const [files, setFiles] = useState([{
     name: 'fileName.pdf'
   }, {
-    name: 'fileName.pdf'
+    name: 'fileName 2.pdf'
   }, {
-    name: 'fileName.pdf'
+    name: 'fileName 3.pdf'
   }])
   return (
     <div className="App">
