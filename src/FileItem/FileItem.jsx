@@ -2,7 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileAlt, faTrash } from '@fortawesome/free-solid-svg-icons'
 
-const FileItem = ({ file }) => {
+const FileItem = ({ file, deleteFile }) => {
     return (
         <>
             <li
@@ -15,7 +15,8 @@ const FileItem = ({ file }) => {
                 </div>
                 <div className="actions">
                     <div className="loading"></div>
-                    <FontAwesomeIcon icon={faTrash} />
+                    <FontAwesomeIcon icon={faTrash}
+                    onClick={()=> deleteFile(file.name)} />
                 </div>
             </li>
         </>
