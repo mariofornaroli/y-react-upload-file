@@ -24,12 +24,12 @@ return (
     <>
         <div className="file-card">
 
-            <div className="fileinputs">
+            <div className="file-inputs">
                 <input type="file" onChange={uploadHandler} />
                 <button>
-                    <div className="icon">
+                    <i>
                         <FontAwesomeIcon icon={faPlus} />
-                    </div>
+                    </i>
                     Upload
                 </button>
             </div>
