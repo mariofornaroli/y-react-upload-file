@@ -7,6 +7,7 @@ import axios from 'axios'
 const FileUpload = ({ files, setFiles, removeFile }) => {
     const uploadHandler = (event) => {
         const file = event.target.files[0];
+        if(!file) return;
         file.isUploading = true;
         setFiles([...files, file])
 

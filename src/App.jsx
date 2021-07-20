@@ -4,13 +4,7 @@ import FileUpload from './FileUpload/FileUpload';
 import FileList from './FileList/FileList';
 
 function App() {
-  const [files, setFiles] = useState([{
-    name: 'fileName.pdf'
-  }, {
-    name: 'fileName 2.pdf'
-  }, {
-    name: 'fileName 3.pdf'
-  }])
+  const [files, setFiles] = useState([])
 
   const removeFile = (filename) => {
     setFiles(files.filter(file => file.name !== filename))
