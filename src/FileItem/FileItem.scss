@@ -1,14 +1,15 @@
 li {
     list-style: none;
     margin: 1.2em 0;
-    background-color: #f55e3038;
+    background-color: rgba(126, 170, 255, 0.22);
     border-radius: 5px;
     display: flex;
     align-items: center;
     padding: 1.2em 1.5em;
 
+
     svg {
-        color: #f55321;
+        color: #333333;
         &:first-child {
             font-size: 1.2em;
             margin-right: 0.8em;
@@ -25,6 +26,7 @@ li {
         cursor: pointer;
 
         .fa-spinner {
+            color: #EB5757;
             font-size: 1.2em;
         }
     }
