@@ -1,8 +1,7 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import './FileUpload.scss'
 import axios from 'axios'
+import { Icon} from "@iconify/react";
 
 const FileUpload = ({ files, setFiles, removeFile }) => {
     const uploadHandler = (event) => {
@@ -33,20 +32,13 @@ const FileUpload = ({ files, setFiles, removeFile }) => {
     return (
         <>
             <div className="file-card">
-
+                <div><Icon style={{height:"34px", width:"34px"}}icon="carbon:cloud-upload"/></div>
                 <div className="file-inputs">
                     <input type="file" onChange={uploadHandler} />
                     <button>
-                        <i>
-                            <FontAwesomeIcon icon={faPlus} />
-                        </i>
-                        Upload
+                        Select Files
                     </button>
                 </div>
-
-                <p className="main">Supported files</p>
-                <p className="info">PDF, JPG, PNG</p>
-
             </div>
         </>
     )
